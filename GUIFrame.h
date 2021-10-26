@@ -19,9 +19,12 @@
 #include <wx/colour.h>
 #include <wx/settings.h>
 #include <wx/statusbr.h>
+#include <wx/grid.h>
+#include <wx/statbmp.h>
+#include <wx/richtext/richtextctrl.h>
+#include <wx/sizer.h>
 #include <wx/panel.h>
 #include <wx/notebook.h>
-#include <wx/sizer.h>
 #include <wx/frame.h>
 
 ///////////////////////////////////////////////////////////////////////////
@@ -43,6 +46,9 @@ class GUIFrame : public wxFrame
 		wxStatusBar* statusBar;
 		wxNotebook* m_notebook1;
 		wxPanel* m_panel1;
+		wxGrid* m_grid1;
+		wxStaticBitmap* m_bitmap1;
+		wxRichTextCtrl* m_richText1;
 		wxPanel* m_panel2;
 
 		// Virtual event handlers, override them in your derived class

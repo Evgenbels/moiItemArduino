@@ -46,9 +46,54 @@ GUIFrame::GUIFrame( wxWindow* parent, wxWindowID id, const wxString& title, cons
 
 	m_notebook1 = new wxNotebook( this, wxID_ANY, wxDefaultPosition, wxDefaultSize, 0 );
 	m_panel1 = new wxPanel( m_notebook1, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxTAB_TRAVERSAL );
-	m_notebook1->AddPage( m_panel1, wxT("  Список"), false );
+	wxBoxSizer* bSizer2;
+	bSizer2 = new wxBoxSizer( wxHORIZONTAL );
+
+	m_grid1 = new wxGrid( m_panel1, wxID_ANY, wxDefaultPosition, wxDefaultSize, 0 );
+
+	// Grid
+	m_grid1->CreateGrid( 5, 5 );
+	m_grid1->EnableEditing( true );
+	m_grid1->EnableGridLines( true );
+	m_grid1->EnableDragGridSize( false );
+	m_grid1->SetMargins( 0, 0 );
+
+	// Columns
+	m_grid1->EnableDragColMove( false );
+	m_grid1->EnableDragColSize( true );
+	m_grid1->SetColLabelAlignment( wxALIGN_CENTER, wxALIGN_CENTER );
+
+	// Rows
+	m_grid1->EnableDragRowSize( true );
+	m_grid1->SetRowLabelAlignment( wxALIGN_CENTER, wxALIGN_CENTER );
+
+	// Label Appearance
+
+	// Cell Defaults
+	m_grid1->SetDefaultCellAlignment( wxALIGN_LEFT, wxALIGN_TOP );
+	bSizer2->Add( m_grid1, 0, wxALL, 5 );
+
+	wxBoxSizer* bSizer3;
+	bSizer3 = new wxBoxSizer( wxVERTICAL );
+
+	m_bitmap1 = new wxStaticBitmap( m_panel1, wxID_ANY, wxBitmap( wxT("foto/obzor-sensornogo-datchika-ttp223-9-1024x468.jpg"), wxBITMAP_TYPE_ANY ), wxDefaultPosition, wxDefaultSize, 0 );
+	m_bitmap1->SetMaxSize( wxSize( -1,300 ) );
+
+	bSizer3->Add( m_bitmap1, 0, wxALL, 5 );
+
+	m_richText1 = new wxRichTextCtrl( m_panel1, wxID_ANY, wxT("jhsdjklghdfjkgh"), wxDefaultPosition, wxDefaultSize, 0|wxVSCROLL|wxHSCROLL|wxNO_BORDER|wxWANTS_CHARS );
+	bSizer3->Add( m_richText1, 1, wxEXPAND | wxALL, 5 );
+
+
+	bSizer2->Add( bSizer3, 1, wxEXPAND, 5 );
+
+
+	m_panel1->SetSizer( bSizer2 );
+	m_panel1->Layout();
+	bSizer2->Fit( m_panel1 );
+	m_notebook1->AddPage( m_panel1, wxT("  Список"), true );
 	m_panel2 = new wxPanel( m_notebook1, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxTAB_TRAVERSAL );
-	m_notebook1->AddPage( m_panel2, wxT("Add"), true );
+	m_notebook1->AddPage( m_panel2, wxT("Add"), false );
 
 	bSizer1->Add( m_notebook1, 1, wxEXPAND | wxALL, 5 );
 
