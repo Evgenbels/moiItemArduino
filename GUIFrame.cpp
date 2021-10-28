@@ -52,7 +52,7 @@ GUIFrame::GUIFrame( wxWindow* parent, wxWindowID id, const wxString& title, cons
 	m_grid1 = new wxGrid( m_panel1, wxID_ANY, wxDefaultPosition, wxDefaultSize, 0 );
 
 	// Grid
-	m_grid1->CreateGrid( 5, 5 );
+	m_grid1->CreateGrid( 200, 7 );
 	m_grid1->EnableEditing( true );
 	m_grid1->EnableGridLines( true );
 	m_grid1->EnableDragGridSize( false );

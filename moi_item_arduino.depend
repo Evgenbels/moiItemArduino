@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1635250169 source:/home/jenya/prg_wx/moi_item_arduino/GUIFrame.cpp
+1635270223 source:/home/jenya/prg_wx/moi_item_arduino/GUIFrame.cpp
 	"wx/wxprec.h"
 	<wx/wx.h>
 	"GUIFrame.h"
@@ -1642,7 +1642,7 @@
 1585059103 /usr/include/wx-3.0/wx/gtk/mdi.h
 	"wx/frame.h"
 
-1635250169 /home/jenya/prg_wx/moi_item_arduino/GUIFrame.h
+1635268408 /home/jenya/prg_wx/moi_item_arduino/GUIFrame.h
 	<wx/artprov.h>
 	<wx/xrc/xmlres.h>
 	<wx/string.h>
@@ -1663,20 +1663,22 @@
 	<wx/notebook.h>
 	<wx/frame.h>
 
-1635236314 source:/home/jenya/prg_wx/moi_item_arduino/moi_item_arduinoApp.cpp
+1635268408 source:/home/jenya/prg_wx/moi_item_arduino/moi_item_arduinoApp.cpp
 	"wx_pch.h"
 	"moi_item_arduinoApp.h"
 	"moi_item_arduinoMain.h"
 
-1635236314 /home/jenya/prg_wx/moi_item_arduino/moi_item_arduinoApp.h
+1635268408 /home/jenya/prg_wx/moi_item_arduino/moi_item_arduinoApp.h
 	<wx/app.h>
 
-1635236754 /home/jenya/prg_wx/moi_item_arduino/moi_item_arduinoMain.h
+1635269230 /home/jenya/prg_wx/moi_item_arduino/moi_item_arduinoMain.h
 	"wx/msgdlg.h"
+	"wx/grid.h"
+	"wx/config.h"
 	"moi_item_arduinoApp.h"
 	"GUIFrame.h"
 
-1635236314 source:/home/jenya/prg_wx/moi_item_arduino/moi_item_arduinoMain.cpp
+1635270333 source:/home/jenya/prg_wx/moi_item_arduino/moi_item_arduinoMain.cpp
 	"wx_pch.h"
 	"moi_item_arduinoMain.h"
 
@@ -1843,4 +1845,39 @@
 
 1585059103 /usr/include/wx-3.0/wx/gtk/dnd.h
 	"wx/icon.h"
+
+1585059103 /usr/include/wx-3.0/wx/config.h
+	"wx/confbase.h"
+	"wx/msw/regconf.h"
+	"wx/os2/iniconf.h"
+	"wx/fileconf.h"
+
+1585059103 /usr/include/wx-3.0/wx/confbase.h
+	"wx/defs.h"
+	"wx/string.h"
+	"wx/object.h"
+	"wx/base64.h"
+
+1585059103 /usr/include/wx-3.0/wx/base64.h
+	"wx/string.h"
+	"wx/buffer.h"
+
+1585059103 /usr/include/wx-3.0/wx/fileconf.h
+	"wx/defs.h"
+	"wx/textfile.h"
+	"wx/string.h"
+	"wx/confbase.h"
+	"wx/filename.h"
+
+1585059103 /usr/include/wx-3.0/wx/textfile.h
+	"wx/defs.h"
+	"wx/textbuf.h"
+	"wx/file.h"
+
+1585059103 /usr/include/wx-3.0/wx/textbuf.h
+	"wx/defs.h"
+	"wx/arrstr.h"
+	"wx/convauto.h"
+	"wx/string.h"
+	"wx/dynarray.h"
 

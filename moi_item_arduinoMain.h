@@ -11,6 +11,8 @@
 #define MOI_ITEM_ARDUINOMAIN_H
 
 #include "wx/msgdlg.h"
+#include "wx/grid.h"
+#include "wx/config.h"
 
 #include "moi_item_arduinoApp.h"
 
@@ -26,6 +28,9 @@ class moi_item_arduinoFrame: public GUIFrame
         virtual void OnClose(wxCloseEvent& event);
         virtual void OnQuit(wxCommandEvent& event);
         virtual void OnAbout(wxCommandEvent& event);
+wxConfig *fConfig;
+wxGridCellAttr *CA,*CA1,*CA2;
+int zakl;
 };
 
 #endif // MOI_ITEM_ARDUINOMAIN_H
